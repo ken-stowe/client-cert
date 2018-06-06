@@ -1,4 +1,4 @@
-FROM nginx
+FROM nginx:1.11.10
 RUN apt-get update && apt-get install -yq jq
 COPY ./bin/* /usr/local/bin/
 RUN chmod +x /usr/local/bin/ssl_*.sh
